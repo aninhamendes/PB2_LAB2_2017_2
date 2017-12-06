@@ -18,6 +18,10 @@ namespace WebAppProva2Lab2AnaMendes.Models
         public Pessoa Pessoa { get; set; }
 
         public List<Audiencia> Audiencias { get; set; }
+        //chave estrangeira
+        public int TipoId { get; set; }
+        //propriedade de navegação
+        public Tipo Tipo { get; set; }
 
 
     }
