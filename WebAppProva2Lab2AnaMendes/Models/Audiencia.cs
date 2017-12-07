@@ -10,6 +10,7 @@ namespace WebAppProva2Lab2AnaMendes.Models
         public int AudienciaId { get; set; }
         public DateTime Data { get; set; }
         public string Detalhes { get; set; }
-        public List<Processo> Processos { get; set; }
+        //Adicionando o Lazy Loading
+        public virtual List<Processo> Processos { get; set; }
     }
 }

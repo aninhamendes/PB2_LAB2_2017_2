@@ -16,8 +16,8 @@ namespace WebAppProva2Lab2AnaMendes.Models
         public int PessoaId { get; set; }
         //propriedade de navegação
         public Pessoa Pessoa { get; set; }
-
-        public List<Audiencia> Audiencias { get; set; }
+        //Adicionando o Lazy Loading
+        public virtual List<Audiencia> Audiencias { get; set; }
         //chave estrangeira
         public int TipoId { get; set; }
         //propriedade de navegação
